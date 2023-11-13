@@ -5,7 +5,7 @@ export const Contactstyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#33b5e5",
+        backgroundColor: "#ffffff",
       },
       
         top: {
@@ -18,7 +18,9 @@ export const Contactstyle = StyleSheet.create({
           
         },
         card:{
-          flexDirection:"row"
+          flexDirection:"row",
+          backgroundColor:"#302f2d"
+
            },
       image: {
         flex: 1,
@@ -65,9 +67,13 @@ export const Contactstyle = StyleSheet.create({
     card1:{
       padding: 0,
       margin:15,
+      backgroundColor: 'rgba(31, 31, 31, 0.9)', // Adjust the alpha value as needed
+
     },
     card:{
       padding: 5,
+      backgroundColor:"#1f1f1f"
+
     }
     
 })

@@ -1,4 +1,4 @@
-import { Alert, SafeAreaView, View} from 'react-native';
+import { Alert, SafeAreaView, View, Image} from 'react-native';
 import { Button, Card, TextInput } from 'react-native-paper';
 import { loginStyle } from './login.style';
 import { NavigationContainer } from '@react-navigation/native';
@@ -56,11 +56,13 @@ export const Loginscreen = ({navigation}) => {
     
        
     <SafeAreaView style={loginStyle.content}>
-    <View>
-      <Card>
+    <View > 
+    <Image style={{width:100,height:100, }}  source={require('./blacklogo.png')}></Image>
+
+      <Card style={loginStyle.card}>
         <Card.Title title="Login" titleStyle={loginStyle.cardTitle} />
         <Card.Content>
-        <TextInput
+        <TextInput style={loginStyle.textinput}
         placeholder="Username"
         value={username}
         onChangeText={(text) => setUsername(text)}
@@ -71,12 +73,12 @@ export const Loginscreen = ({navigation}) => {
         value={password}
         onChangeText={(text) => setPassword(text)}
       />
-          <Button
+          <Button 
             uppercase={false}
             style={loginStyle.cardButton}
             onPress={() => navigation.navigate('ForgotPassword')} // Navigate to the "ForgotPassword" screen
           >
-            Forgot email/password
+             Forgot email/password
           </Button>
           <Button
             style={loginStyle.cardButton}

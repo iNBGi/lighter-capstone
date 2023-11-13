@@ -38,6 +38,8 @@ videoId={selectedExerciseInformation.videolink}
                       />
     
         <Title style={{ textAlign: 'center' }}>{selectedExerciseInformation.exercise}</Title>
+        <Title style={{ textAlign: 'center' }}>Description</Title>
+        <Paragraph> {selectedExerciseInformation.description}</Paragraph>
         <Title style={{ textAlign: 'center' }}>Target muscles</Title>
         <Title style={{ textAlign: 'center' }}>Steps</Title>
         <Paragraph> {exerciseId}</Paragraph>

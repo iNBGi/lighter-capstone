@@ -5,20 +5,22 @@ export const Aboutstyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#33b5e5",
+        backgroundColor: "#ffffff",
       },
       
         top: {
           flex: .2,
           borderWidth: 10,
-          borderColor: "#354259",
+          borderColor: "#2f2d26",
         },
         bottom: {
           flex: .8,
           
         },
         card:{
-          flexDirection:"row"
+          flexDirection:"row",
+          backgroundColor:"#1f1f1f"
+
            },
       image: {
         flex: 1,
@@ -30,7 +32,7 @@ export const Aboutstyle = StyleSheet.create({
     },
     cardTitle: {
       textAlign: 'center',
-        color: "rgb(101,37,131)"
+        color: "#2f2d26"
     },
     titleText: {
       marginBottom:15,
@@ -41,6 +43,9 @@ export const Aboutstyle = StyleSheet.create({
       padding:10,
       fontSize: 20,
       
+    },
+    button: {
+      color: "#ffffff", // Set the text color for all buttons
     },
         Text: {
           marginTop: 16,
@@ -66,7 +71,8 @@ export const Aboutstyle = StyleSheet.create({
     card1:{
       padding: 0,
       margin:15,
-      
+      backgroundColor: 'rgba(31, 31, 31, 0.9)', // Adjust the alpha value as needed
+
     },
     
 })

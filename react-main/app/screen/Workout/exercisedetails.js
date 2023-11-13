@@ -39,7 +39,7 @@ export const ExerciseDetails = ({navigation, route}) => {
   return (
       <View style={Aboutstyle.content}>
       <ExerciseCard exerciseId = {exerciseId} exerciseinformations = {selectedExercise} />
-    <View style={{ backgroundColor: "#ffffff" }}>
+    <View style={{ backgroundColor: "#1f1f1f" }}>
     </View>
   </View>
 );

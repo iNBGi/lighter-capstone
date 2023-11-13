@@ -39,7 +39,7 @@ export const Homescreen = ({ navigation, route  }) => {
        <Text style={Homestyle.titleText}>
        Welcome, {state.firstname}!
               </Text>
-       <Paragraph style={{textAlign:'center'}}>Click Menu to Start your Fitness journey with Us! </Paragraph>
+       <Paragraph style={{ textAlign: 'center', color: '#ffffff' }}>Click Menu to Start your Fitness journey with Us! </Paragraph>
        </Card.Content>
        </Card>
     </View>

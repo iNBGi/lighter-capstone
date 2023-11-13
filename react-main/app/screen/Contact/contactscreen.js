@@ -20,20 +20,24 @@ export const Contactscreen = ({navigation}) => {
    </Card>
    
    <View>
-       <Card style={Contactstyle.card1}>
-       <Card.Content>
-       <Title style={{ textAlign: 'center',}}>Contact Us!</Title>
-       <Paragraph style={{ textAlign: 'center',}}>Any problem? Contact us. {'\n'} Telephone: 4481047 {'\n'} Phone: (639)361266318 {'\n'} Email: Fitnessbuddy@Gmail.com </Paragraph>
-       </Card.Content>
-       </Card>
-       <Card style={Contactstyle.card1}>
-       <Card.Content>
-       <Title style={{ textAlign: 'center',}}>Be Part of The of Community</Title>
-       <Paragraph style={{ textAlign: 'center',}}>Share your journey with us. {'\n'}Fb: Fitnessbuddy {'\n'}IG: @Fitnessbuddy {'\n'}Twitter: @Fitnessbuddy</Paragraph>
-       </Card.Content>
-       </Card>
-   
-    </View>
+  <Card style={Contactstyle.card1}>
+    <Card.Content>
+      <Title style={{ textAlign: 'center', color: '#4cd964' }}>Contact Us!</Title>
+      <Paragraph style={{ textAlign: 'center', color: 'white' }}>
+        Any problem? Contact us. {'\n'} Telephone: 4481047 {'\n'} Phone: (639)361266318 {'\n'} Email: Fitnessbuddy@Gmail.com
+      </Paragraph>
+    </Card.Content>
+  </Card>
+  <Card style={Contactstyle.card1}>
+    <Card.Content>
+      <Title style={{ textAlign: 'center', color: '#4cd964' }}>Be Part of The Community</Title>
+      <Paragraph style={{ textAlign: 'center', color: 'white' }}>
+        Share your journey with us. {'\n'}Fb: Fitnessbuddy {'\n'}IG: @Fitnessbuddy {'\n'}Twitter: @Fitnessbuddy
+      </Paragraph>
+    </Card.Content>
+  </Card>
+</View>
+
     
 
     

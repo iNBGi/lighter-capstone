@@ -11,7 +11,7 @@ export const Aboutstyle = StyleSheet.create({
         top: {
           flex: .2,
           borderWidth: 10,
-          borderColor: "#354259",
+          borderColor: "#2f2d26",
         },
         bottom: {
           flex: .8,
@@ -67,7 +67,7 @@ export const Aboutstyle = StyleSheet.create({
       padding: 20,
       margin:0,
       marginBottom:100,
-      backgroundColor: "#FFF5E0",
+      backgroundColor: "#2f2d26",
     },
     
 })

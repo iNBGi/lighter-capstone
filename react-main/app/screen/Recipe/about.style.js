@@ -5,7 +5,7 @@ export const Aboutstyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#4b83b0",
+        backgroundColor: "#ffffff",
       },
       
         top: {

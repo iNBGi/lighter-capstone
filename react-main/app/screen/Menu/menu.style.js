@@ -5,7 +5,7 @@ export const Menustyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#4b83b0",
+        backgroundColor: "#ffffff",
       },
       
       
@@ -21,7 +21,7 @@ export const Menustyle = StyleSheet.create({
         card:{
           padding: 5,
           flexDirection:"row",
-          backgroundColor:"#fffff"
+          backgroundColor:"#1f1f1f"
            },
       image: {
         flex: 1,
@@ -63,7 +63,8 @@ export const Menustyle = StyleSheet.create({
         alignItems: 'center'
       },
       cardcover:{
-        
+        backgroundColor: "#2f2d26",
+
       },
       card1:{
         padding: 0,

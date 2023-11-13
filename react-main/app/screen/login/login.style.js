@@ -1,26 +1,49 @@
-import{ StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const loginStyle = StyleSheet.create({
-    content: {
-        display: "flex",
-        flex: 1,
-        justifyContent:"center",
-        alignItems:"center",
-        flexDirection:"row",
-        backgroundColor:"#33e5b5"
-    },
-    view: {
-        width: "80%"
-    },
-    cardTitle: {
-        color: "#6684a1"
-    },
-    cardButton: {
-        margin: 2,
-        marginLeft: 0,
-        marginRight: 0,
-        backgroundColor:"#6684a1"
-    },
-    
-    
-})
+  content: {
+    display: "flex",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    backgroundColor: "#ffffff",
+    color: "#ffffff", // Default text color for buttons
+
+  },
+  view: {
+    width: "80%",
+  },
+  card: {
+    padding: 10,
+    backgroundColor: "#1f1f1f",
+    borderRadius: 10, // Add border radius for rounded corners
+  },
+  cardTitle: {
+    color: "#ffffff", // Text color for the card title
+  },
+  cardButton: {
+    margin: 10,
+    marginLeft: 0,
+    marginRight: 0,
+    backgroundColor: "#f6f8fa",
+    borderRadius: 10, // Add border radius for rounded corners
+
+  },
+  image: {
+    flex: 1,
+    justifyContent: "center",
+    width: 340, height: 360
+},
+  cardText: {
+    color: "#ffffff", // Text color for the text inside the card
+  },
+  buttonText: {
+    color: "#ffffff", // Default text color for buttons
+  },
+  textinput:{
+    margin: 0,
+
+  }
+  
+});
