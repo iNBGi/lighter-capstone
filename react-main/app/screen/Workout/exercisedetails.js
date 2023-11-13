@@ -10,7 +10,7 @@ import { AuthContext } from "../../../Context/authContext";
 import axios from "axios";
 import { RecipeContext } from "../../../Context/recipeContext";
 import ExerciseCard from "../../Content/Exercisecard"
-import { Aboutstyle } from "../Recipe/about.style";
+import { Menustyle } from '../Menu/menu.style';
 
 export const ExerciseDetails = ({navigation, route}) => {
   const [loading, setLoading]= useState(false);
@@ -37,9 +37,9 @@ export const ExerciseDetails = ({navigation, route}) => {
     }, []);
   //global state
   return (
-      <View style={Aboutstyle.content}>
+      <View style={Menustyle.content}>
       <ExerciseCard exerciseId = {exerciseId} exerciseinformations = {selectedExercise} />
-    <View style={{ backgroundColor: "#1f1f1f" }}>
+    <View style={{ backgroundColor: "#ffffff" }}>
     </View>
   </View>
 );

@@ -23,38 +23,35 @@ const ExerciseCard = ({exerciseinformations, exerciseId}) => {
        </Card.Actions>
        </Card>
        <ScrollView>
-   <View>
-       <Card style={Menustyle.card3}>
-       <Card.Content>
-       <ScrollView>
-    {selectedExerciseInformation ? ( // Check if selectedrecipeinformation exists
-      <>
-       <YoutubeIframe
-       height={300}
-videoId={selectedExerciseInformation.videolink}
+  <View>
+    <Card style={Menustyle.card3}>
+      <Card.Content>
+        <ScrollView>
+          {selectedExerciseInformation ? (
+            <>
+              <YoutubeIframe
+                height={300}
+                videoId={selectedExerciseInformation.videolink}
+                // Set to false to auto-play the video
+              />
 
-                    
-                      // Set to false to auto-play the video
-                      />
-    
-        <Title style={{ textAlign: 'center' }}>{selectedExerciseInformation.exercise}</Title>
-        <Title style={{ textAlign: 'center' }}>Description</Title>
-        <Paragraph> {selectedExerciseInformation.description}</Paragraph>
-        <Title style={{ textAlign: 'center' }}>Target muscles</Title>
-        <Title style={{ textAlign: 'center' }}>Steps</Title>
-        <Paragraph> {exerciseId}</Paragraph>
-      
-      </>
-    ) : (
-      <Text>Exercise information not found.</Text>
-    )}
-  </ScrollView>
- </Card.Content>
-       </Card>
+              <Title style={{ textAlign: 'center', color: 'white' }}>{selectedExerciseInformation.exercise}</Title>
+              <Title style={{ textAlign: 'center', color: 'white' }}>Description</Title>
+              <Paragraph style={{ color: 'white' }}>{selectedExerciseInformation.description}</Paragraph>
+              <Title style={{ textAlign: 'center', color: 'white' }}>Target muscles</Title>
+              <Paragraph style={{ color: 'white' }}>{selectedExerciseInformation.muscle}</Paragraph>
+              <Title style={{ textAlign: 'center', color: 'white' }}>Steps</Title>
+              <Paragraph style={{ color: 'white' }}>{selectedExerciseInformation.steps}</Paragraph>
+            </>
+          ) : (
+            <Text>Exercise information not found.</Text>
+          )}
+        </ScrollView>
+      </Card.Content>
+    </Card>
+  </View>
+</ScrollView>
 
-   </View>   
-
-   </ScrollView>
     </View>
         
 </SafeAreaView>

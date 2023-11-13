@@ -7,8 +7,8 @@ export const loginStyle = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
-    backgroundColor: "#ffffff",
-    color: "#ffffff", // Default text color for buttons
+    backgroundColor: "#1b1e31",
+    color: "#1b1e31", // Default text color for buttons
 
   },
   view: {
@@ -42,8 +42,8 @@ export const loginStyle = StyleSheet.create({
     color: "#ffffff", // Default text color for buttons
   },
   textinput:{
-    margin: 0,
-
+    margin: 3,
+    color: 'white', // Set the text color to white
   }
   
 });

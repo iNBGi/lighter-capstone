@@ -5,7 +5,7 @@ export const Aboutstyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#ffffff",
+        backgroundColor: "#1b1e31",
       },
       
         top: {
@@ -35,7 +35,7 @@ export const Aboutstyle = StyleSheet.create({
     titleText: {
       marginBottom:15,
       borderRadius: 0,
-      backgroundColor: "#FFFFFF",
+      backgroundColor: "#1b1e31",
       color: "#242F9B",
       textAlign: "center",
       padding:10,

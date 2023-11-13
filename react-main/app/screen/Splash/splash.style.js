@@ -1,12 +1,12 @@
 import{ StyleSheet } from "react-native";
 
 
-export const Recipestyle = StyleSheet.create({
+export const Splashstyle = StyleSheet.create({
     content: {
       
       padding: 0,
         flex: 1,
-        backgroundColor: "#1b1e31",
+        backgroundColor:"#ffffff"
       },
       
         top: {
@@ -38,11 +38,11 @@ height: '100%',
     titleText: {
       marginBottom:15,
       borderRadius: 0,
-      backgroundColor: "#FFFFFF",
-      color: "#242F9B",
+      backgroundColor: "#1f1f1f",
+      color: "#4cd964",
       textAlign: "center",
       padding:10,
-      fontSize: 20,
+      fontSize: 25,
     },
         Text: {
           marginTop: 16,
@@ -51,19 +51,22 @@ height: '100%',
           borderColor: "#20232a",
           borderRadius: 1,
           backgroundColor: "#ECE5C7",
-          height: 70,
+          height:80,
           textAlign: 'center',
             justifyContent: 'center',
             alignItems: 'center',
+            fontSize: 25,
+
       },
       button:{
         
         justifyContent: 'center',
         alignItems: 'center',
-        
-        
         marginRight: 5,
-        
+        color:"000000"
+      },
+      buttonText: {
+        color: "#000000", // Default text color for buttons
       },
       card1:{
        
@@ -75,13 +78,15 @@ height: '100%',
         
       },
       card:{
-     flexDirection:"row"
+     flexDirection:"row",
+     backgroundColor:"#1f1f1f"
+
       },
 
       card2:{
        
         margin:10,
-        backgroundColor: "#6684a1",
+        backgroundColor: "#1f1f1f",
       },
       Paragraph:{
         width: 500
@@ -96,8 +101,7 @@ height: '100%',
     cardButton1: {
       
       margin: 1,
-      backgroundColor: "#6684a1",
-     
+      backgroundColor: "#1f1f1f",
       bottom:0,
   }
     

@@ -5,7 +5,7 @@ export const Aboutstyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#ffffff",
+        backgroundColor: "#1b1e31",
       },
       
         top: {
@@ -62,16 +62,20 @@ export const Aboutstyle = StyleSheet.create({
       button:{
         
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        color: "#ffffff",
+
+
       },
     cardButton: {
         margin: 1,
+        
       
     },
     card1:{
       padding: 0,
       margin:15,
-      backgroundColor: 'rgba(31, 31, 31, 0.9)', // Adjust the alpha value as needed
+      backgroundColor: '#1b1e31', // Adjust the alpha value as needed
 
     },
     

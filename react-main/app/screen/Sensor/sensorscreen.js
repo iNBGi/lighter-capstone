@@ -1,34 +1,42 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import HumanPose from 'react-native-human-pose';
-import {View, Text} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+
+const angleThreshold = 120; // Adjust this threshold as needed
 
 export const Sensorscreen = () => {
   const [noOfSquats, setNoOfSquats] = useState(0);
   const [hasSit, setHasSit] = useState(false);
   const [hasStand, setHasStand] = useState(false);
-  const onPoseDetected = (pose) => {
 
-    console.log('leftHip', pose[0]?.pose?.leftHip?.y);
-    console.log('leftAnkle', pose[0]?.pose?.leftAnkle?.y);
-    if (
-      pose[0]?.pose?.leftHip?.confidence > 0.4 &&
-      pose[0]?.pose?.leftAnkle?.confidence > 0.4
-    ) {
-      if (
-        Math.abs(pose[0]?.pose?.leftHip?.y - pose[0]?.pose?.leftAnkle?.y) < 500
-      ) 
-      {
+  const calculateAngle = (joint1, joint2, joint3) => {
+    const radians = Math.atan2(joint3.y - joint2.y, joint3.x - joint2.x) - Math.atan2(joint1.y - joint2.y, joint1.x - joint2.x);
+    let angle = Math.abs((radians * 180.0) / Math.PI);
+
+    // Ensure angle is within 0 to 360 degrees
+    if (angle > 180) {
+      angle = 360 - angle;
+    }
+
+    return angle;
+  };
+
+  const onPoseDetected = (pose) => {
+    const leftHip = pose[0]?.pose?.leftHip;
+    const leftKnee = pose[0]?.pose?.leftKnee;
+    const leftAnkle = pose[0]?.pose?.leftAnkle;
+
+    if (leftHip && leftKnee && leftAnkle) {
+      const hipKneeAnkleAngle = calculateAngle(leftHip, leftKnee, leftAnkle);
+
+      if (hipKneeAnkleAngle > angleThreshold) {
         setHasSit(true);
         setHasStand(false);
       }
-      if (hasSit) {
-        if (
-          Math.abs(pose[0]?.pose?.leftHip?.y - pose[0]?.pose?.leftAnkle?.y) > 500
-        ) 
-        {
-          setHasStand(true);
-          setHasSit(false);
-        }
+
+      if (hasSit && hipKneeAnkleAngle < angleThreshold) {
+        setHasStand(true);
+        setHasSit(false);
       }
     }
   };
@@ -38,7 +46,7 @@ export const Sensorscreen = () => {
   }, [hasStand]);
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <Text>Human Pose</Text>
       <HumanPose
         height={500}
@@ -57,7 +65,7 @@ export const Sensorscreen = () => {
           left: 0,
           right: 0,
           textAlign: 'center',
-          textShadowColor:'black',
+          textShadowColor: 'black',
           backgroundColor: 'white',
           padding: 10,
           fontSize: 20,

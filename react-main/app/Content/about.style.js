@@ -30,7 +30,7 @@ export const Aboutstyle = StyleSheet.create({
     },
     cardTitle: {
       textAlign: 'center',
-        color: "rgb(101,37,131)"
+        color: "#ffffff"
     },
     titleText: {
       marginBottom:15,

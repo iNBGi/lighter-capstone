@@ -26,7 +26,7 @@ export const Aboutscreen = ({navigation}) => {
    <View>
       <Card style={Aboutstyle.card1}>
         <Card.Content>
-          <Title style={{ color: '#4cd964', fontFamily: 'Roboto' }}>About the Application</Title>
+          <Title style={{ color: '#fddcbd', fontFamily: 'Roboto' }}>About the Application</Title>
           <Paragraph style={{ color: 'white', fontFamily: 'Roboto' }}>
             This app helps users to lose weight, maintain a healthy lifestyle, and know their body mass index (BMI) using a step-based approach. It walks you through three phases: weight management, calorie deficit, and weight maintenance. The user will be able to keep track of their progress and weigh themselves on the scale.
           </Paragraph>

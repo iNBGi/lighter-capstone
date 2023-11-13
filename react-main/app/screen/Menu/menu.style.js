@@ -5,7 +5,7 @@ export const Menustyle = StyleSheet.create({
     content: {
       padding: 0,
         flex: 1,
-        backgroundColor: "#ffffff",
+        backgroundColor: "#1b1e31",
       },
       
       

@@ -22,7 +22,7 @@ export const Contactscreen = ({navigation}) => {
    <View>
   <Card style={Contactstyle.card1}>
     <Card.Content>
-      <Title style={{ textAlign: 'center', color: '#4cd964' }}>Contact Us!</Title>
+      <Title style={{ textAlign: 'center', color: '#fddcbd' }}>Contact Us!</Title>
       <Paragraph style={{ textAlign: 'center', color: 'white' }}>
         Any problem? Contact us. {'\n'} Telephone: 4481047 {'\n'} Phone: (639)361266318 {'\n'} Email: Fitnessbuddy@Gmail.com
       </Paragraph>
@@ -30,7 +30,7 @@ export const Contactscreen = ({navigation}) => {
   </Card>
   <Card style={Contactstyle.card1}>
     <Card.Content>
-      <Title style={{ textAlign: 'center', color: '#4cd964' }}>Be Part of The Community</Title>
+      <Title style={{ textAlign: 'center', color: '#fddcbd' }}>Be Part of The Community</Title>
       <Paragraph style={{ textAlign: 'center', color: 'white' }}>
         Share your journey with us. {'\n'}Fb: Fitnessbuddy {'\n'}IG: @Fitnessbuddy {'\n'}Twitter: @Fitnessbuddy
       </Paragraph>

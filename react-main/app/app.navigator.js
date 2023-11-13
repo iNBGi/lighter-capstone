@@ -28,6 +28,7 @@ import { ExerciseDetails } from './screen/Workout/exercisedetails';
 import { ExerciseProvider } from '../Context/exerciseContext';
 import { Exercisescreen } from './screen/Workout/exercisescreen';
 import { Sensorscreen } from './screen/Sensor/sensorscreen';
+import SplashScreen from './screen/Splash/splash';
 
 
 
@@ -41,6 +42,7 @@ return (
         <RecipeProvider>
             <ExerciseProvider>
         <Stack.Navigator>
+        <Stack.Screen options={{headerTitle: 'Test', headerShown: false}} name="Splash" component={SplashScreen} />
         <Stack.Screen options={{headerTitle: 'Test', headerShown: false}} name="Login" component={Loginscreen} />
         <Stack.Screen options={{headerTitle: 'Test', headerShown: false}} name="Register" component={Registerscreen} />
             <Stack.Screen options={{headerTitle: 'Test', headerShown: false}} name ='Information' component={Informationscreen}/>

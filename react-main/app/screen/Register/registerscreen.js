@@ -49,21 +49,51 @@ export const Registerscreen = ({navigation}) => {
         <SafeAreaView style={loginStyle.content}> 
         <View>
 
-            <Card>
-                <Card.Title title="Register" titleStyle={loginStyle.cardTitle}></Card.Title>
-                <Card.Content>
-                <TextInput label="Firstname" value={firstname}  onChangeText={(text) => setFirstname(text)}></TextInput>
-                <TextInput label="Lastname" value={lastname} onChangeText={(text) => setLastname(text)}></TextInput>
-                <TextInput label="Email" value={email} onChangeText={(text) => setEmail(text)}keyboardType="email-address"></TextInput>
-                <TextInput label="Password" value={password} onChangeText={(text) => setPassword(text)}secureTextEntry={true}></TextInput>
-                <Button uppercase={false} style={loginStyle.cardButton}>Forgot email/password</Button>
-                <Button 
-                style={loginStyle.cardButton} onPress={handleSubmit}>
-                Register
-                </Button>
-                <Button  style={loginStyle.cardButton} onPress={()=> navigation.navigate('Login')}>Login</Button>
-                </Card.Content>                                                         
-            </Card>
+        <Card style={loginStyle.content}> 
+  <Card.Title title="Register" titleStyle={loginStyle.cardTitle} />
+  <Card.Content>
+    <TextInput
+      style={loginStyle.textinput}
+      label="Firstname"
+      value={firstname}
+      theme={{ colors: { text: 'white', primary: 'white' } }}
+      onChangeText={(text) => setFirstname(text)}
+    />
+    <TextInput
+      style={loginStyle.textinput}
+      label="Lastname"
+      value={lastname}
+      theme={{ colors: { text: 'white', primary: 'white' } }}
+      onChangeText={(text) => setLastname(text)}
+    />
+    <TextInput
+      style={loginStyle.textinput}
+      label="Email"
+      value={email}
+      onChangeText={(text) => setEmail(text)}
+      keyboardType="email-address"
+      theme={{ colors: { text: 'white', primary: 'white' } }}
+    />
+    <TextInput
+      style={loginStyle.textinput}
+      label="Password"
+      value={password}
+      onChangeText={(text) => setPassword(text)}
+      secureTextEntry={true}
+      theme={{ colors: { text: 'white', primary: 'white' } }}
+    />
+    <Button uppercase={false} style={loginStyle.cardButton}>
+      Forgot email/password
+    </Button>
+    <Button style={loginStyle.cardButton} onPress={handleSubmit}>
+      Register
+    </Button>
+    <Button style={loginStyle.cardButton} onPress={() => navigation.navigate('Login')}>
+      Login
+    </Button>
+  </Card.Content>
+</Card>
+
             </View>
         </SafeAreaView>
    );

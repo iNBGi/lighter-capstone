@@ -6,7 +6,7 @@ export const Homestyle = StyleSheet.create({
       
       padding: 0,
         flex: 1,
-        backgroundColor:"#ffffff"
+        backgroundColor:"#1b1e31"
       },
       
         top: {
@@ -33,13 +33,13 @@ height: '100%',
     },
     cardTitle: {
       textAlign: 'center',
-        color: "#6684a1"
+        color: "#1b1e31"
     },
     titleText: {
       marginBottom:15,
       borderRadius: 0,
-      backgroundColor: "#1f1f1f",
-      color: "#4cd964",
+      backgroundColor: "#1b1e31",
+      color: "#ffffff",
       textAlign: "center",
       padding:10,
       fontSize: 25,
@@ -50,7 +50,7 @@ height: '100%',
           borderWidth: 4,
           borderColor: "#20232a",
           borderRadius: 1,
-          backgroundColor: "#ECE5C7",
+          backgroundColor: "#ECfffE5C7",
           height:80,
           textAlign: 'center',
             justifyContent: 'center',
@@ -71,7 +71,7 @@ height: '100%',
       card1:{
        
         margin:20,
-        backgroundColor: "#6684a1",
+        backgroundColor: "#1b1e31",
         width: 300
       },
       cardcover:{
@@ -86,7 +86,7 @@ height: '100%',
       card2:{
        
         margin:10,
-        backgroundColor: "#1f1f1f",
+        backgroundColor: "#1b1e31",
       },
       Paragraph:{
         width: 500
@@ -101,7 +101,7 @@ height: '100%',
     cardButton1: {
       
       margin: 1,
-      backgroundColor: "#1f1f1f",
+      backgroundColor: "#1b1e31",
       bottom:0,
   }
     

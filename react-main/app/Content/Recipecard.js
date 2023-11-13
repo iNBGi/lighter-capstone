@@ -34,7 +34,6 @@ const RecipeCard = ({recipeinformations, recipeId}) => {
         <Paragraph> {selectedrecipeinformation.steps}</Paragraph>
         <Title style={{ textAlign: 'center' }}>Nutrition</Title>
         <Paragraph> {selectedrecipeinformation.nutrition}</Paragraph>
-        <Paragraph> {recipeId}</Paragraph>
       
       </>
     ) : (
